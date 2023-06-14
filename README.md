@@ -17,14 +17,15 @@ Motherboards
 Motherboards are compatible with CPUs with the same socket.
 In the real world some motherboards and CPUs support multiple memory types. For the purposes of this task those cases should not be taken into consideration and only the limitations listed above should be used. 
 
-Task requirements
+Task requirements:
 The list of items in the inventory is stored in a file named “pc-store-inventory.json”.
 Implement a console application that loads the inventory, accepts a CPU, Memory and Motherboard part numbers and generates configurations with the selected parts. 
 When the user provides a full list of components the provided configuration is validated and if valid the price is calculated.
 When the user provides part of the components, all possible configurations with the provided components are listed and price calculated.
 When the user provides incompatible list of components, they should see an error message indicating what the issue is.
+
 Example input and output:
---------------------------------------------------------------------------
+
   Please enter part number(s): 12900K  
   There are 5 possible combinations:
   Combination 1

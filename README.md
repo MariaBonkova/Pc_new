@@ -33,16 +33,14 @@ Example input and output:
 	Memory - Samsung 32GB M323R4GA3BB0-CQKOL – DDR5
       Price: 1111
 . . . 
----------------------------------------------------------------------------
+
   Please enter part number(s): 12900K, 12500  
   ERROR: Please choose different component types
   
-----------------------------------------------------------------------------
   Please enter part number(s): 12900K, MSIZ690, CR8GB
   ERROR: The selected configuration is not valid.
 Memory of type DDR4 is not compatible with the CPU
 …
-----------------------------------------------------------------------------
 
 Example of a working configuration: 
 Intel® Core™ i9-12900K Processor – LGA1700, DDR5

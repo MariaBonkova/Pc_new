@@ -55,10 +55,7 @@ public class Main {
             } else {
                 PcPrinter.errorDiffComponent();
             }
-
         }
-
-
     }
 
     private static void existCupAndMotherboardAndMemory(Store store, String motherBordByPartNumber, String memoryByPartNumber, CPU foundCpuByPartNumber, Memory foundMemoryByPartNumber) {
@@ -73,6 +70,7 @@ public class Main {
             PcPrinter.errorConfig();
             PcPrinter.notCompatibleError(type);
         }
+
         PcPrinter.printConfig(foundCpuByPartNumber, motherBoardByPartNumber, memoryByPartNumberFilterByType);
     }
 
@@ -80,6 +78,7 @@ public class Main {
         String socketToByFound = foundCpuByPartNumber.getSocket();
         List<Motherboard> motherBoardByPartNumber = PcValidator.getMotherBoardByPartNumberAndSocket(socketToByFound, motherBordByPartNumber, store);
         List<Memory> memoryPartNumber = PcValidator.getMemoryPartNumber(foundCpuByPartNumber.getSupportedMemory(), store);
+
         PcPrinter.printConfig(foundCpuByPartNumber, motherBoardByPartNumber, memoryPartNumber);
     }
 
